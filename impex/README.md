@@ -4,6 +4,8 @@ Permet d'importer et exporter des données du serveur SuperChalets
 ## Requis fonctionnels
 - Lire un fichier CSV contenant les utilisateurs, leur type d'utilisateur (Enum), leur mot de passe
   - Appeler le serveur pour créer l'utilisateur
+- Lire un fichier CSV contenant les Chalets
+  - Appeler le serveur pour les créer
 - Lire un fichier XML contenant les disponibilités de réservations pour les chalets
   - Appeler le serveur pour les créer
 - Lire un fichier XML contenant les réservations et appeler le serveur pour les créer si les plages sont disponibles

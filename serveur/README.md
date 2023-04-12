@@ -11,6 +11,8 @@ Permet d'effectuer les opérations CRUD pour les réservations
 6) POST /utilisateur: Ajoute un utilisateur
 7) GET /reservations: si administrateur, renvoyé toutes les réservations triées par ordre de
 reservationId (pas de sort, votre choix d'algorithme). Peut prendre un paramètre "limite=" pour limiter le nombre de résultats renvoyés
+8) POST /chalet: Ajoute un chalet
+9) GET /chalet/{chaletId}: Retourne les informations pour ce chalet
 - le format de communication est JSON (voir plus bas)
 - En cas de réussite, le code HTTP renvoyé sera 200
 - En cas d'erreur, le code HTTP renvoyé sera 542
@@ -80,5 +82,15 @@ reservationId (pas de sort, votre choix d'algorithme). Peut prendre un paramètr
 `{
   "reservations": [liste d'objets JSON "reservation"  ]
 }`
-
+### Chalets
+`{
+  "chalet": {
+      "id": 1234,
+      "nom": "Doux Repos",
+      "url_image": "https://s3.amazonaws.com/imagescloud/images/medias/hebergement/camp-rustique-hiver.jpg",
+      "geolocalisation" {
+        "latitude": 51.470544,
+        "longitude": -2.588658
+  }
+}`
 
