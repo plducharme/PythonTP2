@@ -12,6 +12,9 @@ Permet d'effectuer les opérations CRUD pour les réservations
 7) GET /reservations: si administrateur, renvoyé toutes les réservations triées par ordre de
 reservationId (pas de sort, votre choix d'algorithme). Peut prendre un paramètre "limite=" pour limiter le nombre de résultats renvoyés
 - le format de communication est JSON (voir plus bas)
+- En cas de réussite, le code HTTP renvoyé sera 200
+- En cas d'erreur, le code HTTP renvoyé sera 542
+  - Le contenu de la réponse doit inclure la raison de l'erreur
 - Un administrateur peut effectuer toutes les opérations
 - Un utilisateur régulier peut seulement consulter ses propres réservations
 - Les réservations devront être persistées dans le répertoire "voute" en format gzip avec la nomenclature:

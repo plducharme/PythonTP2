@@ -22,15 +22,15 @@ Le système sera composé des sous-systèmes suivants:
 - Si appelé en tant qu'administrateur, peut retourner le résultat de recherches
 
 ## Détails
-- Dans les répertoires de chaque sous-module, vous trouverez un README.md qui indique les 
+- Dans les répertoires de chaque sous-système, vous trouverez un README.md qui indique les 
 requis fonctionnels de ce sous-système
 
 ## Évaluation
 Ce TP vaut 20% de la note finale:
-7% pour la fonctionnalité (si le code marche avec le jeu de test)
-5% pour la qualité de l'implémentation (encapsulation, choix du type de méthodes, etc)
-3% pour la documentation (je vous laisse le design, ça doit être clair le rôle d'une classe)
-5% pour la qualité des tests unitaires (couvrir les cas de bases)
+- 7% pour la fonctionnalité (si le code marche avec le jeu de test)
+- 5% pour la qualité de l'implémentation (encapsulation, choix du type de méthodes, etc)
+- 3% pour la documentation (je vous laisse le design, ça doit être clair le rôle d'une classe)
+- 5% pour la qualité des tests unitaires (couvrir les cas de bases)
 
 ## Concept
 1) Le serveur devrait utiliser le module impex
