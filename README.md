@@ -6,7 +6,7 @@ Bienvenue chez SuperChalets! Notre mission est de permettre
 à nos clients de réserver des chalets idylliques à travers le Québec!
 
 En tant que notre nouveau département informatique, vous devez implémenter un système permettant
-d'importer des réservations à partir de fichiers et de pouvoir les exposer via un API json
+d'importer/exporter des réservations à partir de fichiers et de pouvoir les exposer via un API json
 
 ## Survol du système
 
@@ -18,8 +18,8 @@ Le système sera composé des sous-systèmes suivants:
 - Module qui permet d'importer des données dans les serveurs
 - Permet aussi d'exporter les données vers divers formats
 ### Le client
-- Le client communique avec le serveur pour aller chercher des informations sur les réservations
-- Si appelé en tant qu'administrateur, peut retourner le résultat de recherches
+- Le client communique avec le serveur pour aller chercher des informations sur ses réservations
+- Si appelé en tant qu'administrateur, peut retourner toutes les réservations
 
 ## Détails
 - Dans les répertoires de chaque sous-système, vous trouverez un README.md qui indique les 

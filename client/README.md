@@ -11,4 +11,5 @@ Permet d'interagir avec le serveur pour aller chercher les informations de rése
 6) POST /utilisateur: Ajoute un utilisateur
 7) GET /reservations: si administrateur, renvoyé toutes les réservations triées par ordre de
 reservationId
-- Afficher les informations de la réservation incluant l'image
+- Créer le code client permettant d'effectuer les opérations avec le serveur
+- Voir le README.md du serveur pour le format JSON entre le client et le serveur
