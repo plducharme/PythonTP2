@@ -27,6 +27,7 @@ reservationId (pas de sort, votre choix d'algorithme). Peut prendre un paramètr
     - Utiliser une fonction de hachage pour persister/vérifier le mot de passe
     - Le serveur doit vérifier l'authentification de l'utilisateur et s'assurer qu'il a le bon type (rôle) pour l'action requise 
 - Lors du lancement du serveur, utiliser le module impex pour initialiser les données initiales
+  - Se définir un utilisateur système (administrateur) pour le chargement initial
 
 ## Formats JSON
 ### Utilisateurs
