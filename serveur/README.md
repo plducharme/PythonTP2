@@ -33,14 +33,16 @@ reservationId (pas de sort, votre choix d'algorithme). Peut prendre un paramètr
 ### Utilisateurs
   `{
     "utilisateur": {
-      "email": "test@test.com"
-      "mot_de_passe": "123456"
-      "nom": "Laforce"
-      "prenom": "Chantelle"
+      "email": "test@test.com",
+      "mot_de_passe": "123456",
+      "nom": "Laforce",
+      "prenom": "Chantelle",
       "adresse": {
-        "no_civique": 4
-        "rue": "rue des fleurs"
-        "ville": "Ste-Eulalie"
+        "no_civique": 4,
+        "rue": "rue des fleurs",
+        "ville": "Ste-Eulalie",
+        "province": "QC",
+        "pays": "CA",
         "code_postal": "H0H 0H0"
       }
     }
@@ -48,24 +50,26 @@ reservationId (pas de sort, votre choix d'algorithme). Peut prendre un paramètr
 ### Réservations (ajout/modification/retrait)
 `{
   "reservation": {
-    "id": 12345678
+    "id": 12345678,
     "chalet": {
-      "id": 1234
-      "nom": "Doux Repos"
-      "url_image": "https://s3.amazonaws.com/imagescloud/images/medias/hebergement/camp-rustique-hiver.jpg"
+      "id": 1234,
+      "nom": "Doux Repos",
+      "url_image": "https://s3.amazonaws.com/imagescloud/images/medias/hebergement/camp-rustique-hiver.jpg",
       "geolocalisation" {
-        "latitude": 51.470544
+        "latitude": 51.470544,
         "longitude": -2.588658
       }
     }
     "utilisateur": {
-      "email": "a@a.com"
-      "nom": "Laforce"
-      "prenom": "Chantelle"
+      "email": "a@a.com",
+      "nom": "Laforce",
+      "prenom": "Chantelle",
       "adresse": {
-        "no_civique": 4
-        "rue": "rue des fleurs"
-        "ville": "Ste-Eulalie"
+        "no_civique": 4,
+        "rue": "rue des fleurs",
+        "ville": "Ste-Eulalie",
+        "province": "QC",
+        "pays": "CA",
         "code_postal": "H0H 0H0"
       }
     }
