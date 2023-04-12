@@ -32,5 +32,13 @@ Ce TP vaut 20% de la note finale:
 3% pour la documentation (je vous laisse le design, ça doit être clair le rôle d'une classe)
 5% pour la qualité des tests unitaires (couvrir les cas de bases)
 
+## Concept
+1) Le serveur devrait utiliser le module impex
+2) Le module impex devrait pouvoir utiliser le module client pour effectuer les opérations
+![Architecture proposée!](/images/survol.PNG) 
+
+## Bonus
+Au cours des prochaines semaines, des "extras" seront ajoutés pour la possibilité de points bonus;
+rester à l'affut de vos MIO
 
 
