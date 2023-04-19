@@ -39,6 +39,7 @@ reservationId (pas de sort, votre choix d'algorithme). Peut prendre un paramètr
       "mot_de_passe": "123456",
       "nom": "Laforce",
       "prenom": "Chantelle",
+      "type": "client",
       "adresse": {
         "no_civique": 4,
         "rue": "rue des fleurs",

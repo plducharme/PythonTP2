@@ -39,6 +39,6 @@ Ce TP vaut 20% de la note finale:
 
 ## Bonus
 Au cours des prochaines semaines, des "extras" seront ajoutés pour la possibilité de points bonus;
-rester à l'affut de vos MIO
+rester à l'affût de vos MIO
 
 

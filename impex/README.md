@@ -2,8 +2,8 @@
 ##  Rôle
 Permet d'importer et exporter des données du serveur SuperChalets
 ## Requis fonctionnels
-- Lire un fichier CSV contenant les utilisateurs, leur type d'utilisateur (Enum), leur mot de passe
-  - Appeler le serveur pour créer l'utilisateur
+- Lire un fichier CSV contenant les utilisateurs, leur type d'utilisateur (Enum), leur mot de passe; voir README.md dans le répertoire data pour le format
+  - Appeler le serveur pour créer les utilisateurs
 - Lire un fichier CSV contenant les Chalets
   - Appeler le serveur pour les créer
 - Lire un fichier XML contenant les disponibilités de réservations pour les chalets
@@ -15,3 +15,6 @@ Permet d'importer et exporter des données du serveur SuperChalets
   - Doit se faire via l'appel au serveur
 - Implémenter une méthode pour exporter les données de réservations dans un fichier "export_{timestamp}.json" dans le format JSON
   - Doit se faire via l'appel au serveur
+## datautils
+module permettant de générer des données de tests
+- va être mise-à-jour au cours de la semaine (PyCharm: "Git->Update Project->Merge incoming...->Ok")
