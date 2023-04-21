@@ -11,5 +11,8 @@ Permet d'interagir avec le serveur pour aller chercher les informations de rése
 6) POST /utilisateur: Ajoute un utilisateur
 7) GET /reservations: si administrateur, renvoyé toutes les réservations triées par ordre de
 reservationId
+8) POST /chalet: Ajoute un chalet
+9) GET /chalet/{chaletId}: Retourne les informations pour ce chalet
+10) POST /chalet/{chaletId}/plage: Créer une plage de disponibilité pour le chalet {chaletId}
 - Créer le code client permettant d'effectuer les opérations avec le serveur
 - Voir le README.md du serveur pour le format JSON entre le client et le serveur

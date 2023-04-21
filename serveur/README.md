@@ -61,7 +61,8 @@ reservationId (pas de sort, votre choix d'algorithme). Peut prendre un paramètr
       "geolocalisation" {
         "latitude": 51.470544,
         "longitude": -2.588658
-      }
+      },
+      "plages": [32, 33]
     }
     "utilisateur": {
       "email": "a@a.com",
@@ -94,4 +95,4 @@ reservationId (pas de sort, votre choix d'algorithme). Peut prendre un paramètr
         "longitude": -2.588658
   }
 }`
-
+## Authentification des utilisateurs

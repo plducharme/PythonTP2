@@ -7,6 +7,8 @@
   - Nom de famille de l'utilisateur, pris de la base de données publique du Gouvernement du Québec, https://statistique.quebec.ca/fr/produit/tableau/les-1-000-premiers-noms-de-famille-selon-le-rang-quebec
 - prenom
   - Prenom de l'utilisateur, pris de la base de données publique du Gouvernement du Québec, https://www.retraitequebec.gouv.qc.ca/fr/services-en-ligne-outils/banque-de-prenoms/Pages/banque-de-prenoms.aspx
+- type
+  - type de l'utilisateur: 'client' ou 'admin'
 - adresse_no
   - No d'adresse civique, généré aléatoirement entre 1 et 1024
 - adresse_rue
@@ -30,3 +32,6 @@ geo_lat
     - latitude, généré aléatoirement entre 47.000000 et 51.000000 (entre Château-Richer et Mont-Valin sur la carte lorsque la longitude est de -71.000000) 
 geo_long
     - longitude, généré aléatoirement entre -71.000000 et -79.000000 (entre Château-Richer et Rivière-Kipawa sur la carte lors que la latitude est 47.000000)
+# disponibilites.xml
+Attribut chalet.id: id du chalet pour lequel on défini une plage de disponibilités
+Attribut plage.id: id de la plage de disponibilité (correspond à une semaine)

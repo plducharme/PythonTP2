@@ -2,6 +2,7 @@ import csv
 import random
 import string
 import os
+import xml.etree.ElementTree as ET
 
 
 class DataUtils:
@@ -90,7 +91,53 @@ class DataUtils:
                 writer.writerow({'id': 1000+i, 'nom': chalets[i], 'url_image': DataUtils.get_random(images),
                                  'geo_lat': lat, 'geo_long': long})
 
+    @staticmethod
+    def generer_chalets_plages_xml(id_depart, id_fin):
+        root = ET.Element('disponibilites')
+        for i in range(id_depart, id_fin+1):
+            chalet = ET.SubElement(root, 'chalet')
+            chalet.attrib = {'id': str(i)}
+            for j in range(1, 53):
+                dispo = ET.SubElement(chalet, 'plage')
+                dispo.attrib = {'id': str(j)}
+        with open('./data/disponibilites.xml', 'wb') as dispo_xml:
+            dispo_xml.write(ET.tostring(root))
+
+    @staticmethod
+    def generer_reservations_xml(id_depart, id_fin):
+        root = ET.Element('reservations')
+        utilisateurs = DataUtils.load_clients()
+        for i in range(id_depart, id_fin+1):
+            dispos = [x for x in range(1, 53)]
+            for j in range(0, 5):
+                reservation = ET.SubElement(root, 'reservation')
+                reservation.attrib = {'id': str(i) + str("{:03d}".format(j))}
+                chalet = ET.SubElement(reservation, 'chalet')
+                chalet.text = str(i)
+                utilisateur = ET.SubElement(reservation, 'utilisateur')
+                utilisateur.text = DataUtils.get_random(utilisateurs)
+                plages = ET.SubElement(reservation, 'plages')
+                for k in range(1, random.randint(2, 5)):
+                    plage = ET.SubElement(plages, 'plage')
+                    plage_no = DataUtils.get_random(dispos)
+                    dispos.remove(plage_no)
+                    plage.text = str(plage_no)
+        with open('./data/reservations.xml', 'wb') as xml_file:
+            xml_file.write(ET.tostring(root))
+
+    @staticmethod
+    def load_clients():
+        utilisateurs = []
+        with open('./data/utilisateurs.csv', 'r') as csv_file:
+            reader = csv.DictReader(csv_file)
+            for ligne in reader:
+                if ligne['type'] == 'client':
+                    utilisateurs.append(ligne['email'])
+        return utilisateurs
+
 
 DataUtils.generer_utilisateurs_csv(750)
 DataUtils.generer_chalets_csv(52)
+DataUtils.generer_chalets_plages_xml(1000, 1052)
+DataUtils.generer_reservations_xml(1000, 1052)
 
