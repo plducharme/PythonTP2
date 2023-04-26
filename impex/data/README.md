@@ -21,7 +21,7 @@
   - Pays, constante -> 'CA'
 - adresse_cp
   - Code Postal, généré aléatoirement sous le format canadien 'H0H 0H0' 
-# Chalets
+# chalets.csv
 - id
   - identifiant unique, integer  
 - nom
