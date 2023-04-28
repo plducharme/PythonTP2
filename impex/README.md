@@ -3,7 +3,7 @@
 Permet d'importer et exporter des données du serveur SuperChalets
 ## Requis fonctionnels
 - Importer le module client
-- Lire un fichier CSV contenant les utilisateurs, leur type d'utilisateur (Enum), leur mot de passe; voir README.md dans le répertoire data pour le format
+- Lire un fichier CSV contenant les utilisateurs, leur type d'utilisateur, leur mot de passe; voir README.md dans le répertoire data pour le format
   - Appeler le serveur (via le client) pour créer les utilisateurs
 - Lire un fichier CSV contenant les Chalets
   - Appeler le serveur (via le client) pour les créer
