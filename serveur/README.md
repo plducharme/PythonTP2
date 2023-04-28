@@ -57,7 +57,7 @@ renvoyer le résultat dans un tableau HTML
       "id": 1234,
       "nom": "Doux Repos",
       "url_image": "https://s3.amazonaws.com/imagescloud/images/medias/hebergement/camp-rustique-hiver.jpg",
-      "geolocalisation" {
+      "geolocalisation": {
         "latitude": 51.470544,
         "longitude": -2.588658
       },

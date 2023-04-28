@@ -56,7 +56,7 @@ class TPBaseHTTPRequestHandler(BaseHTTPRequestHandler):
     def do_POST(self):
         # Chemin d'accès retourné par la requête
         path = self.path
-        # Cas d'ajout un enclos
+        # Cas d'ajout un enclos POST /enclos
         if path == '/enclos':
             # L'entête content-length contient la longueur du contenu du corps de la requête POST
             content_length = int(self.headers['Content-Length'])
@@ -72,7 +72,7 @@ class TPBaseHTTPRequestHandler(BaseHTTPRequestHandler):
                 # La méthode de zoo a fait un raise d'une exception
                 self.send_response(500, 'Enclos existant')
             self.end_headers()
-        # Cas ajout d'animal dans un enclos
+        # Cas ajout d'animal dans un enclos POST /enclos/{nom enclos}
         elif path.startswith('/enclos/'):
             # Aller chercher le nom de l'enclos
             enclos = path.split('/')[2]
