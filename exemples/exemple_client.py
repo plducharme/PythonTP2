@@ -1,6 +1,7 @@
 import requests
 
 
+# Classe permettant de générer des requêtes vers le serveur
 class ClientServeurZoo:
 
     def __init__(self, url_base):

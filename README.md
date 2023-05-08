@@ -14,7 +14,8 @@ Travail Pratique 2 pour le cours 420-SD2-HY
   - L'import des données du serveur est fait séparément
       - Partir votre serveur
       - Exécuter votre module impex.py en appelant la fonction executer()
-        - voir le nouveau requis impex\README.md 
+        - voir le nouveau requis impex\README.md
+  - Pour les objets utilisateurs, vous n'avez plus besoin d'utiliser un Enum pour le type
 
 ## Introduction
 Bienvenue chez SuperChalets! Notre mission est de permettre
