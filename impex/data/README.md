@@ -25,7 +25,7 @@
 - id
   - identifiant unique, integer  
 - nom
-  - Nom de l'emplacement idyllique, provient d'un blog proposant des noms pour des chalets (lien perdu, sera crédité si retrouvé)
+  - Nom de l'emplacement idyllique, provient d'un blog proposant des noms pour des chalets (https://eldorado-immobilier.com/nom-location-vacances-exemples/)
 - url_image
   - url de l'image du chalet, pris à partir de https://unsplash.com/fr/licence
 geo_lat
